@@ -2,20 +2,18 @@
 
 *{
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 html {
     font-size: 18px;
 }
 
-body {
+body{
     font-family: 'Rubik', sans-serif;
-    background-color:hsl(226, 43%, 10%) ;
+    background-color: hsl(226, 43%, 10%);
 }
-
-/* profile starts */
 
 .main {
     height: 800px;
@@ -25,163 +23,193 @@ body {
     align-items: center;
 }
 
-.main .main-content .left-side-content .profile img {
-    width: 80px;
-    border: 3px solid white;
-    border-radius: 50%;
-}
+/* start of left side */
 
-.main .main-content{
-    width: 300px;
-    height: 400px;
-}
-.main .main-content .left-side-content .profile_desc{
+.left-side .card_below {
     background-color: hsl(235, 46%, 20%);
-    border-radius: 20px;
-    height: 530px;
+    width: 300px;
+    height: 460px;
+    border-radius: 15px;
 }
 
-.main .main-content .left-side-content .profile_desc .profile{
+.left-side .card_below .card_up_content img {
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 1.5em;
+}
+
+.left-side .card_below .card_up_content{
     background-color: hsl(246, 80%, 60%);
-    padding: 1.5em;
-    border-radius: 20px;
-    height: 350px;
-   
-}
-.main .main-content .left-side-content .profile_desc .profile .report {
-    margin-top: 1em;
-    color:hsl(236, 100%, 87%);
-    font-size: 1rem;
-    font-weight: 500;
+    height: 300px;
+    border-radius: 15px;
+    padding: 1em 0 0 1.5em;
 }
 
-.main .main-content .left-side-content .profile_desc .profile .name {
-    color:  white;
-    margin-top: .2em;
-    font-size: 2.5rem;
+.left-side .card_below .card_up_content .report {
     font-weight: 300;
-    
-}
-
-
-.main .main-content .left-side-content .profile_desc .profile .wait {
-    margin-top: 5.5em;
-}
-
-.main .main-content .left-side-content .profile_desc .profile .wait p {
-    padding: .7em;
-    color:hsl(235, 45%, 61%);
+    color: hsl(236, 100%, 87%);
     font-size: 1rem;
-    font-weight: 400;
 }
 
-.main .main-content .left-side-content .profile_desc .profile .wait .item1 {
+.left-side .card_below .card_up_content .name {
+    font-size: 2.5rem;
     color: white;
 }
 
-/* profile ends */
+.left-side .card_below .card_below_content {
+    margin-left: 1.5em;
+    margin-top: 1em;
+}
 
-.center-content_one {
-    width: 700px;
-    height: 400px;
+.left-side .card_below .card_below_content p {
+    padding: .5em;
+    color:  hsl(235, 45%, 61%);
+    font-size: 1rem;
+}
+
+.left-side .card_below .card_below_content .weekly {
+    color: white;
+}
+
+/* End of left side */
+
+.main-content {
+    width: 800px;
+    height: 460px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: space-between;
     flex-wrap: wrap;
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
-.main .center-content_one .card1 {
-    width: 220px;
-    height: 220px;
-   
-    border-radius: 15px;
-}
-
-.main .center-content_one .card1 .card1-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: .8em;
-}
-
-.main .center-content_one .card1 .card1-top img {
-    width: 40px;
+.main-content .card {
+   width: 250px;
+   background-color: hsl(15, 100%, 70%);
+   border-radius: 10px;
    
 }
 
-.main .center-content_one .card1-details {
-    height: 190px;
+.card-images {
+    width: 250px;
+    height: 40px;
+    background: url("../images/icon-work.svg") no-repeat 8.7rem -.7rem/31%;
+
+}
+
+
+.card-content {
     background-color: hsl(235, 46%, 20%);
-    border-radius: 15px;
+    height: 175px;
+    border-radius: 10px;
 }
 
-.main .center-content_one .card1-details .card-title {
-    padding: 1em;
+.card-content-image {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    z-index: 1;
+    padding: 1em;
 }
-.main .center-content_one .card1-details .card-title img {
+
+.card-content-image p {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.card-content-image img {
     height: 5px;
 }
 
-.main .center-content_one .card1-details .card-title p {
-    color: white;
-    font-weight: 500;
+.card-below-content {
+    padding: 0 1em 1em 1em;
+
 }
 
-.main .center-content_one .card1-details .card-below {
-    padding: 1em;
-}
-
-.main .center-content_one .card1-details .card-below .hrs {
+.card-below-content .hrs {
     font-size: 2.5rem;
     color: white;
     font-weight: 300;
 }
 
-.main .center-content_one .card1-details .card-below .week {
-    color:hsl(236, 100%, 87%);  
-    font-weight: 300;
-    padding: .5em 0 .5em 0;
+.card-below-content .last {
+    color: hsl(235, 45%, 61%);
+    font-size: .8rem;
 }
 
-.card_one {
-    background-color: hsl(15, 100%, 70%);
-}
 
-.card_two {
+.main-content .card2 {
+    width: 250px;
     background-color: hsl(195, 74%, 62%);
-}
+    border-radius: 10px;
+    
+ }
 
-.card_three {
-    background-color: hsl(348, 100%, 68%);
-}
-
-
-.card_four{
-    background-color: hsl(145, 58%, 55%);
-}
-
-.card_five{
-    background-color: hsl(264, 64%, 52%);
-}
-
-.card_six {
-    background-color: hsl(43, 84%, 65%);
-}
-
-.card_top{
-    margin-top: 4em;
-}
-
-
-.card1-top #you {
-    width: 40px;
+ .card-images_two {
+    width: 250px;
     height: 40px;
+    background: url("../images/icon-play.svg") no-repeat 8.7rem -.7rem/31%;
+
 }
+
+
+.main-content .card3 {
+    width: 250px;
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 10px;
+    
+ }
+
+ .card-images_three {
+    width: 250px;
+    height: 40px;
+    background: url("../images/icon-study.svg") no-repeat 8.7rem -.7rem/31%;
+
+}
+
+.main-content .card4 {
+    width: 250px;
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 10px;
+    
+ }
+
+ .card-images_four {
+    width: 250px;
+    height: 40px;
+    background: url("../images/icon-exercise.svg") no-repeat 8.7rem -.7rem/31%;
+
+}
+
+.main-content .card5 {
+    width: 250px;
+    background-color:  hsl(264, 64%, 52%);
+    border-radius: 10px;
+    
+ }
+
+ .card-images_five {
+    width: 250px;
+    height: 40px;
+    background: url("../images/icon-social.svg") no-repeat 8.7rem -.7rem/31%;
+
+}
+
+.main-content .card6 {
+    width: 250px;
+    background-color:  hsl(43, 84%, 65%);
+    border-radius: 10px;
+    
+ }
+
+ .card-images_six {
+    width: 250px;
+    height: 40px;
+    background: url("../images/icon-self-care.svg") no-repeat 8.7rem -.7rem/31%;
+
+}
+
 
 
 
